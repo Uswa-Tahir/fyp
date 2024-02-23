@@ -140,11 +140,11 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
     padding: 10,
-    borderWidth: 1,
+    //borderWidth: 1,
   },
   profileHeader: {
     alignItems: 'center',
-    borderWidth: 1,
+    //borderWidth: 1,
     marginBottom: 20,
   },
   profileImage: {
