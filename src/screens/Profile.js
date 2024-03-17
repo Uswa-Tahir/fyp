@@ -25,7 +25,7 @@ const Profile = ({ navigation }) => {
   const YourAdsClicked=()=>
   {
     console.log('clicked');
-    navigation.navigate('Ad');
+    navigation.navigate('My Ads');
   }
 
   const handleChange = (key, value) => {

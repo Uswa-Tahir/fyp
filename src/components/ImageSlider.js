@@ -18,7 +18,7 @@ const ImageSlider = ({ images }) => {
 
 const styles = StyleSheet.create({
     container: {
-        margintOP:10,
+        marginTop:10,
         justifyContent: 'center',
         alignSelf: 'center',
         height: 200, // Set a fixed height for the image slider container

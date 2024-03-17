@@ -94,7 +94,7 @@
 
 import React from 'react';
 import { View, Text, Button, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useRoute } from '@react-navigation/native';
 import ImageSlider from '../components/ImageSlider'; // Import the ImageSlider component
 import { FontAwesome5, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 
@@ -114,8 +114,13 @@ const Price = 1000000;
 const Location='PUCIT new campus';
 const PhoneNo = '0303-0000000';
 
+//ALL THE ABOVE DETAILS SHOULD BE FETCHED BASED ON ID PASSED TO THIS SCREEN USING ROUTE PARAMETERS from Ad 
+
 const PhoneDetail = () => {
     const navigation = useNavigation();
+    const route = useRoute();
+    const { id } = route.params; // the id is passed from Ad 
+
 
     return (
         <ScrollView contentContainerStyle={styles.scrollContainer}>
